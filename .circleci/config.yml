@@ -28,7 +28,7 @@ jobs:
           command: jest --ci --runInBand --reporters=default --reporters=jest-junit
           environment:
             JEST_JUNIT_OUTPUT_DIR: "./junit/js-test-results.xml"
-      - store_test_result:
+      - store_test_results:
           path: ./junit
       - store_artifacts:
           path: ./junit
